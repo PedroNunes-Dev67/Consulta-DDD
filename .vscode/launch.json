@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsultaDddApplication<ConsultaDDD>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "PedroNunesDev.ConsultaDDD.ConsultaDddApplication",
+            "projectName": "ConsultaDDD",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
