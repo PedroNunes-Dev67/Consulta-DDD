@@ -1,0 +1,71 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar{
+    display: flex;
+    padding: 10px 40px 0 20px;
+    position: fixed;
+}
+#logo_navbar{
+    width: 160px;
+    height: 70px;
+}
+#navbar div{
+    width: 1300px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#navbar_link{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+a{
+    color: black;
+}
+#conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.textos{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.btnStyle{
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: rgb(15, 15, 230);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnStyle a{
+    color: white;
+    text-decoration: none;
+}
+
+.btnStyle:hover{
+    transform: scale(1.09);
+    transition: all 0.3s ease;
+}
+
+#conteudo img{
+    width: 500px;
+    height: 29  0px;
+}

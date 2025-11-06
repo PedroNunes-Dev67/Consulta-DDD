@@ -6,20 +6,27 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js" defer></script>
     <title>Conect DDD</title>
-    <style>
-        body{
-            text-align: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Conecta DDD</h1>
-    <form>
-        <input type="number" required placeholder="Digite o ddd" id="inDDD">
-        <input type="submit" value="Buscar" id="inSUbmit">
-    </form>
-    <h2 id="stateResp"></h2>
-    <pre id="citiesResp"></pre>
+    
+    <nav id="navbar">
+        <img src="assets/Logo.png" alt="logo" id="logo_navbar">
+        <div>
+            <ul id="navbar_link">
+                <li><a href="">Suporte</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="conteudo">
+        <div class="textos">
+            <div>
+                <h1>Busque informações <br> sobre qualquer <strong style="color: rgb(5, 5, 174)">DDD</strong><br> do <strong style="color: green;">Brasil</strong>!</h1>
+                <button class="btnStyle"><a href="">Buscar DDD</a></button>
+            </div>    
+        </div>
+        <img src="assets/Logo.png" alt="logo">
+    </div>
 </body>
 </html>
