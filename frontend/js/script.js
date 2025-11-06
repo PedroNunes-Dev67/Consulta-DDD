@@ -25,7 +25,7 @@ form.addEventListener('submit', async (e) => {
     }
     catch(error){
         alert('DDD não encontrado');
-        form.inDDD.value = "";
+        form.inDDD.value = ""
         stateResp.innerText= ""
         citiesResp.innerText=""
     }
