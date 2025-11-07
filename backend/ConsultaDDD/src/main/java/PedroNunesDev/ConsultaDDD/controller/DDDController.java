@@ -20,9 +20,9 @@ public class DDDController {
     private DDDService dddService;
 
     @GetMapping("/{ddd}")
-    public ResponseEntity<DDD> buscarDDD(@PathVariable("ddd") String dddRequest){
+    public ResponseEntity<?> buscarDDD(@PathVariable("ddd") String dddRequest){
 
-        ResponseEntity<DDD> response = dddService.buscarDDD(dddRequest);
+        ResponseEntity<?> response = dddService.buscarDDD(dddRequest);
 
         return ResponseEntity.status(response.getStatusCode()).body(response.getBody());
     }
