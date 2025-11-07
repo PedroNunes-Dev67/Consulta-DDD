@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import PedroNunesDev.ConsultaDDD.model.DDD;
 import PedroNunesDev.ConsultaDDD.service.DDDService;
 
 @CrossOrigin(origins= "http://localhost:5500")

@@ -5,7 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta DDD</title>
     <link rel="stylesheet" href="../styles/styleNav.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/script.js" defer></script>
 </head>
+<style>
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #topo{
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #formulario{
+        padding: 10px;
+        width: 80%;
+    }
+    input{
+        border: none;
+    }
+    #inDDD{
+        width: 15%;
+        background-color: rgba(92, 92, 98, 0.218);
+        height: 30px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .btnStyle{
+    border: none;
+    width: 130px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: rgb(15, 15, 230);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    }
+    .btnStyle:hover{
+        transform: scale(1.09);
+        transition: all 0.3s ease;
+    }
+    #Resp{
+        color: black;
+    }
+    #RequestCities{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #btnReload{
+        visibility: hidden;
+        margin-bottom: 25px;
+    }
+</style>
 <body>
     <nav id="navbar">
         <div id="div_navbar">
@@ -18,5 +77,30 @@
             </div>
         </div>    
     </nav>
+    <div class="conteudo">
+        <div id="topo">
+            <h1>Digite qualquer <strong style="color: rgb(5, 5, 174);">DDD</strong> do Brasil: </h1>
+        </div>
+        <div id="formulario">
+            <form>
+                <input type="number" min="0" max="99" required placeholder="Ex: 81 ou 081" id="inDDD">
+                <input type="submit" value="Buscar DDD" id="inSubmit" class="btnStyle">
+            </form>
+        </div>
+    </div>
+    <div class="conteudo" style=" min-height: 51.7vh; height: auto;">
+        <h2 id="state"></h2>
+        <h3 id="quantCities" style="margin-top: 0;"></h3>
+        <div id="Resp">
+            <pre id="RequestCities">
+
+            </pre>
+        </div>
+        <a href="#navbar"><button class="btnStyle" id="btnReload">Voltar pro topo</button></a>
+    </div>
+    <footer id="footer">
+        <span>Todos os direitos reservados &copy;</span>
+        <span>Pedro Nunes - 2025</span>
+    </footer>
 </body>
 </html>

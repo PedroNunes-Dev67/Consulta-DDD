@@ -36,3 +36,13 @@ li a{
     color: black;
     margin-left: 40px;
 }
+#footer{
+    background-color: rgb(15, 15, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
