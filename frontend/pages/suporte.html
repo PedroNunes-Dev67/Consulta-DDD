@@ -6,6 +6,19 @@
     <title>Conecta DDD Suporte</title>
     <link rel="stylesheet" href="../styles/styleNav.css">
 </head>
+<style>
+    #suporteDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #formSuporte form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+</style>
 <body>
     <nav id="navbar">
         <div id="div_navbar">
@@ -18,5 +31,16 @@
             </div>
         </div>    
     </nav>
+    <div id="suporteDiv">
+        <h1>Está com algum problema?</h1>
+        <h3>Insira um título e uma descrição para que possamos sanar.</h3>
+        <div id="formSuporte">
+            <form>
+                <input type="text" required placeholder="Titulo" id="inTitulo">
+                <textarea name="descricao" id="inDescricao" placeholder="Descrição" rows="5" cols="40"></textarea>
+                <input type="submit" value="Enviar" id="inSubmit">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
