@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta DDD Contato</title>
     <link rel="stylesheet" href="../styles/styleNav.css">
+    <link rel="stylesheet" href="../styles/reponsividade_nav.css">
 </head>
 <style>
     .imgIcon{
@@ -38,6 +39,35 @@
     #conteudo a:hover{
         transform: scale(1.06);
         transition: all 0.3s ease;
+    }
+    @media(max-width:760px){
+     
+        h1{
+            font-size: 28px;
+        }
+        #base{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .imgIcon{
+            margin-top: 10px;
+        }
+        h2{
+            margin-top: 20px;
+        }
+        h3{
+            margin-top: 0;
+        }
+        #footer{
+            background-color: white;
+            color: black;
+            padding: 0;
+            height: 8vh;
+            margin: 0;
+            justify-content: end;
+        }
     }
 </style>
 <body>

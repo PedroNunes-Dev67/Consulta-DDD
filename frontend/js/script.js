@@ -11,8 +11,10 @@ form.addEventListener('submit', async (e) => {
 
     
     try{
+        stateResp.innerText = "Carregando...";
+        
         let response = await axios.get(`http://localhost:8080/ddd/${ddd}`);
-     
+
         let {cities, state} = response.data;
         cities.sort((a,b) => a.localeCompare(b, "pt", {sensitivy: 'base'}));
         stateResp.innerText="Estado: "+state;

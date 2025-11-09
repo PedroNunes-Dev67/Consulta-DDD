@@ -34,7 +34,7 @@ body{
 }
 li a{
     color: black;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 #footer{
     background-color: rgb(15, 15, 230);
@@ -45,4 +45,7 @@ li a{
     color: white;
     padding: 20px;
 }
+
+
+
 

@@ -35,7 +35,7 @@ body{
 }
 li a{
     color: black;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 #conteudo{
     width: 100%;
@@ -72,7 +72,6 @@ li a{
 
 #conteudo img{
     width: 500px;
-    height: 29  0px;
 }
 
 #sobre{
@@ -91,4 +90,22 @@ li a{
     align-items: center;
     color: white;
     padding: 20px;
+}
+@media(max-width:760px){
+    #conteudo{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .textos div{
+        font-size: 18px;
+        text-align: center;
+    }
+    #conteudo img{
+        width: 350px;
+        height: 170px;
+        margin-top: 30px;
+    }
+    #div_navbar{
+        margin-left: 10px;
+    }
 }

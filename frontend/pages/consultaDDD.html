@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conecta DDD</title>
     <link rel="stylesheet" href="../styles/styleNav.css">
+    <link rel="stylesheet" href="../styles/reponsividade_nav.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../js/script.js" defer></script>
 </head>
@@ -63,6 +64,22 @@
     #btnReload{
         visibility: hidden;
         margin-bottom: 25px;
+    }
+    @media(max-width:760px){
+        #inDDD  {
+            width: 150px;
+            
+        }
+
+        #footer{
+            background-color: white;
+            color: black;
+            padding: 0;
+            height: 8vh;
+            margin: 0;
+            justify-content: end;
+            position: fixed;
+        }
     }
 </style>
 <body>
