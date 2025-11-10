@@ -6,6 +6,8 @@
     <title>Conecta DDD Suporte</title>
     <link rel="stylesheet" href="../styles/styleNav.css">
     <link rel="stylesheet" href="../styles/reponsividade_nav.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/suporte.js"></script>
 </head>
 <style>
     #suporteDiv{
@@ -64,11 +66,12 @@
         <h3>Insira seu Email e uma descrição para que possamos ajudar.</h3>
         <div id="formSuporte">
             <form>
-                <input type="email" required placeholder="Email" id="inTitulo" class="in">
-                <textarea name="descricao" id="inDescricao" placeholder="Descrição" rows="5" cols="40" class="in" required></textarea>
+                <input type="email" required placeholder="Email" id="inEmail" class="in">
+                <textarea name="descricao" id="inRequest" placeholder="Descrição" rows="5" cols="40" class="in" required></textarea>
                 <input type="submit" value="Enviar" id="inSubmit" class="btnStyle">
             </form>
         </div>
     </div>
+    <h2 id="RespSuporte"></h2>
 </body>
 </html>
