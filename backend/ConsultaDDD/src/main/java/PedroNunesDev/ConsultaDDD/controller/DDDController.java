@@ -27,11 +27,6 @@ public class DDDController {
         return ResponseEntity.status(response.getStatusCode()).body(response.getBody());
     }
 
-    @Autowired
-    private RequestRepository requestRepository;
-    @Autowired
-    private UsuarioRepository usuarioRepository;
-
     @PostMapping("/request")
     public ResponseEntity<RequestUsuario> cadastrarRequest(@RequestBody DtoRequest dtoRequest){
 
