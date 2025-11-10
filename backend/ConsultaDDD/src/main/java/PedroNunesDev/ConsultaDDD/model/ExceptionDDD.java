@@ -1,6 +1,6 @@
-package PedroNunesDev.ConsultaDDD.controller;
+package PedroNunesDev.ConsultaDDD.model;
 
-public class ExceptionServer {
+public class ExceptionDDD {
 
     private String message;
     private String type;
