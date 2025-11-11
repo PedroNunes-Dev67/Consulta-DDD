@@ -11,6 +11,7 @@ form.addEventListener('submit', async (e) => {
 
     
     try{
+        document.getElementById('load').style='white';
         document.getElementById('load').innerText = "Carregando...";
         
         let response = await axios.get(`http://localhost:8080/ddd/${ddd}`);
@@ -33,12 +34,12 @@ form.addEventListener('submit', async (e) => {
     }
     catch(error){
         document.getElementById('btnReload').style.visibility = 'hidden' ;
-        alert('Erro, DDD não encontrado!')
-        stateResp.innerText = "";
-        RequestCities.innerText = "";
-        quantCities.innerText = "";
-        document.getElementById('load').innerText = "";
-        document.getElementById('inDDD').value = "";
+        stateResp.innerText="";
+        quantCities.innerText="";
+        RequestCities.innerText="";
+        document.getElementById('load').innerText="Erro! DDD não encontrado."
+        document.getElementById('load').style.color='red';
     }
+    form.reset();
 })
 
