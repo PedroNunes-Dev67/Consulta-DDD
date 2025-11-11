@@ -2,16 +2,13 @@ package PedroNunesDev.ConsultaDDD.controller;
 
 import PedroNunesDev.ConsultaDDD.dtos.DtoRequest;
 import PedroNunesDev.ConsultaDDD.model.RequestUsuario;
-import PedroNunesDev.ConsultaDDD.model.Usuario;
-import PedroNunesDev.ConsultaDDD.repository.RequestRepository;
-import PedroNunesDev.ConsultaDDD.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import PedroNunesDev.ConsultaDDD.service.DDDService;
 
-@CrossOrigin(origins= "http://localhost:5500")
+@CrossOrigin(origins= "https://conectaddd.netlify.app")
 @RestController
 @RequestMapping("/ddd")
 public class DDDController {
