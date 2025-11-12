@@ -39,6 +39,7 @@ form.addEventListener('submit', async (e) => {
         RequestCities.innerText="";
         document.getElementById('load').innerText="Erro! DDD não encontrado."
         document.getElementById('load').style.color='red';
+        console.log(error.response.data)
     }
     form.reset();
 })
