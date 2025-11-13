@@ -2,6 +2,7 @@ package PedroNunesDev.ConsultaDDD.controller;
 
 import PedroNunesDev.ConsultaDDD.dtos.DtoRequest;
 import PedroNunesDev.ConsultaDDD.model.RequestUsuario;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +26,7 @@ public class DDDController {
     }
 
     @PostMapping("/request")
-    public ResponseEntity<RequestUsuario> cadastrarRequest(@RequestBody DtoRequest dtoRequest){
+    public ResponseEntity<RequestUsuario> cadastrarRequest(@RequestBody @Valid DtoRequest dtoRequest){
 
         return dddService.cadastrarRequest(dtoRequest);
     }

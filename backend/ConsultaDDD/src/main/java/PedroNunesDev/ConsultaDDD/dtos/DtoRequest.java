@@ -1,8 +1,13 @@
 package PedroNunesDev.ConsultaDDD.dtos;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 public class DtoRequest {
 
+    @Email
     private String email;
+    @NotBlank
     private String request;
 
     public DtoRequest(String email, String request) {
